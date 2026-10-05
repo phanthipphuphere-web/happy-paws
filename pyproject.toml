@@ -1,0 +1,24 @@
+[project]
+name = "happy-paws"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "phanthipphuphere", email = "phanthipphuphere@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "fastmcp>=4.0.10",
+    "mariadb>=1.1.14",
+    "nicegui>=3.17.1",
+    "python-dotenv>=1.2.3",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+happy-paws = "happy_paws:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
